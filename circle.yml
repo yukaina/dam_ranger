@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  ruby:
+    version: 2.2.3
+dependencies:
+  pre:
+    - gem update --system
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --clean
+test:
+  pre:
+    - ruby -v
+    - bundle exec rubocop

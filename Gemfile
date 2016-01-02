@@ -71,7 +71,9 @@ group :test do
   gem 'annotate'
   gem 'capybara'
   gem 'database_rewinder'
+  gem 'rspec_junit_formatter', '0.2.2'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 gem 'rack-mini-profiler'
-gem 'slim-rails', github: 'slim-template/slim-rails'
+gem 'slim-rails'
