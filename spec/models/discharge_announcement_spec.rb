@@ -70,29 +70,60 @@ RSpec.describe DischargeAnnouncement, type: :model do
   end
 
   describe 'after_create' do
-    before do
-      FactoryGirl.create(:discharge_announcement_with_four_target_municipality)
-    end
-
-    describe '#targeted_municipality' do
-      subject { TargetedMunicipality.all }
-      it { expect(subject.count).to eq(4) }
-      it { expect(subject.map(&:name)).to match_array(%w(柴田郡柴田町 柴田郡大河原町 刈田郡蔵王町 白石市)) }
-    end
-
-    describe '#discharge_announcement_targeted_municipalities' do
-      context 'when TargetedMunicipality.first' do
-        subject { TargetedMunicipality.first.discharge_announcement_targeted_municipalities }
-
-        it { expect(subject.first.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
-        it { expect(subject.last.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+    context 'when targeted_municipality is not exists.' do
+      before do
+        FactoryGirl.create(:discharge_announcement_with_four_target_municipality)
       end
 
-      context 'when TargetedMunicipality.last' do
-        subject { TargetedMunicipality.last.discharge_announcement_targeted_municipalities }
+      describe '#targeted_municipality' do
+        subject { TargetedMunicipality.all }
+        it { expect(subject.count).to eq(4) }
+        it { expect(subject.map(&:name)).to match_array(%w(柴田郡柴田町 柴田郡大河原町 刈田郡蔵王町 白石市)) }
+      end
 
-        it { expect(subject.first.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
-        it { expect(subject.last.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+      describe '#discharge_announcement_targeted_municipalities' do
+        context 'when TargetedMunicipality.first' do
+          subject { TargetedMunicipality.first.discharge_announcement_targeted_municipalities }
+
+          it { expect(subject.first.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+          it { expect(subject.last.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+        end
+
+        context 'when TargetedMunicipality.last' do
+          subject { TargetedMunicipality.last.discharge_announcement_targeted_municipalities }
+
+          it { expect(subject.first.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+          it { expect(subject.last.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+        end
+      end
+    end
+
+    context 'when targeted_municipality is already exists.' do
+      before do
+        FactoryGirl.create(:targeted_municipality, name: '白石市')
+        FactoryGirl.create(:discharge_announcement_with_four_target_municipality)
+      end
+
+      describe '#targeted_municipality' do
+        subject { TargetedMunicipality.all }
+        it { expect(subject.count).to eq(4) }
+        it { expect(subject.map(&:name)).to match_array(%w(柴田郡柴田町 柴田郡大河原町 刈田郡蔵王町 白石市)) }
+      end
+
+      describe '#discharge_announcement_targeted_municipalities' do
+        context 'when TargetedMunicipality.first' do
+          subject { TargetedMunicipality.first.discharge_announcement_targeted_municipalities }
+
+          it { expect(subject.first.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+          it { expect(subject.last.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+        end
+
+        context 'when TargetedMunicipality.last' do
+          subject { TargetedMunicipality.last.discharge_announcement_targeted_municipalities }
+
+          it { expect(subject.first.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+          it { expect(subject.last.discharge_announcement_id).to eq(TargetedMunicipality.first.id) }
+        end
       end
     end
   end
