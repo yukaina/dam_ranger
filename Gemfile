@@ -71,6 +71,7 @@ group :test do
   gem 'annotate'
   gem 'capybara'
   gem 'database_rewinder'
+  gem 'rspec_junit_formatter', '0.2.2'
 end
 
 gem 'rack-mini-profiler'
