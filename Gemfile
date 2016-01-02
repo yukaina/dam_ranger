@@ -75,4 +75,4 @@ group :test do
 end
 
 gem 'rack-mini-profiler'
-gem 'slim-rails', github: 'slim-template/slim-rails'
+gem 'slim-rails'
