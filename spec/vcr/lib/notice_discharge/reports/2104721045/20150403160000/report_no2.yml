@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.example.com/nrpc0603gDisp.do?damDischgCode=2104721045&reportNo=2&reportTime=20150403160000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - AnemoneCrawler/0.00
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=300
+      Content-Language:
+      - ja
+      Content-Type:
+      - text/html;charset=Windows-31J
+      Date:
+      - Thu, 09 Apr 2015 16:52:28 GMT
+      Last-Modified:
+      - Thu, 09 Apr 2015 16:52:28 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '1043'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
+        VHJhbnNpdGlvbmFsLy9FTiINCiAiaHR0cDovL3d3dy53My5vcmcvVFIvaHRt
+        bDQvbG9vc2UuZHRkIj4NCjwhLS0NCg0KLS0+DQo8aHRtbCBsYW5nPSJqYSI+
+        DQo8aGVhZD4NCjx0aXRsZT6NkZN5jPCSyo/IgXmQ7ILMlmiN0I/ulfGBeoNf
+        g4CV+pesksqSbZW2PC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRl
+        bnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVNoaWZ0X0pJ
+        UyI+DQo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBo
+        cmVmPSIvY3NzL3BjLmNzcyIgbWVkaWE9ImFsbCI+DQo8bGluayByZWw9InN0
+        eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSIvY3NzLzA2LmNzcyIg
+        bWVkaWE9ImFsbCI+DQo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRl
+        eHQvY3NzIiBocmVmPSIvY3NzL2FsYXJtZGV0YWlsLmNzcyIgbWVkaWE9ImFs
+        bCI+DQo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvanMv
+        b3BlbldpbmRvdy5qcyI+PC9zY3JpcHQ+DQo8c3R5bGU+DQo8IS0tDQotLT4N
+        Cjwvc3R5bGU+DQo8L2hlYWQ+DQo8Ym9keT4NCjxkaXYgY2xhc3M9Im1haW4i
+        Pg0KDQo8ZGl2IGNsYXNzPSJ3b3JrYXJlYSI+DQoJPGRpdiBjbGFzcz0ibGFz
+        dHVwZGF0ZSI+DQqNWJBWjp6Nj4FGMjAxNS8wNC8xMCAwMTo1MjwvZGl2Pg0K
+        CTxkaXYgY2xhc3M9InRpdGxlIj6DX4OAlfqXrJLKkm2VtjwvZGl2Pg0KCTxk
+        aXYgY2xhc3M9ImFsYXJtIj4NCgkJPGRpdiBjbGFzcz0iZGV0YWlsIj4NCgkJ
+        CZBYi2eOUoNfg4ANCgkJCSZuYnNwO5XEkeOQ7A0KCQkJJm5ic3A7j6yWlJDs
+        DQoJCQkmbmJzcDuR5jKNhg0KCQkJJm5ic3A7MjAxNS8wNC8wMyAxNjowMDwv
+        ZGl2Pg0KCQk8ZGl2IGNsYXNzPSJvZmZpY2UiPg0KCQkJkFiLZ45Sg1+DgIrH
+        l52OeI+KlK2VXDwvZGl2Pg0KCQk8ZGl2Pg0KCQkJjV6QhZKykN+CzIpKjm6C
+        zI/ulfE8L2Rpdj4NCgkJPGRpdiBjbGFzcz0iZGV0YWlsIj4NCgkJCZBYi2eO
+        UoNfg4CCxYLNgUGCUpP6glCCVY6egk+CT5WqgsmDX4OAgtaCzJesk/yXyoKq
+        jV6QhZfKgWmWiJViglCCVYJPl6eV+4OBgVuDZ4OLgWqCyZJCgrWC3IK1gr2B
+        Qo2hjOOC4Ij4gquRsYKrl6yT/JfKgsyI6pWUgqqDX4OAgsyP7ZdwjV6QhZNm
+        gqmC54l6l6yCtYFBjmOC6ILwg1+DgILJkpmXr4K1gtyCt4FCPGJyPo2hjOOB
+        QYl6l6yXyoKqgrOC54LJkZ2JwYK1gtyCt4LMgsWBQYm6l6yJzZDsgsyQhYjK
+        j+OPuILJjHiJ+oK1gsSJuoKzgqKBQjxicj48YnI+PC9kaXY+DQoJPC9kaXY+
+        DQo8L2Rpdj4NCjxkaXYgY2xhc3M9Im1lbnVhcmVhIj4NCjxpbWcgc3JjPSIv
+        aW1nL2xvZ28uZ2lmIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjY4IiBhbHQ9Io2R
+        k3mM8JLKj8iBeZDsgsyWaI3Qj+6V8YF6Ij48ZGl2IGNsYXNzPSJtZW51bGlu
+        ayI+PGEgaHJlZj0iL25ycGMwNjAyZ0Rpc3AuZG8/YXJlYUNvZGU9ODIiIGNs
+        YXNzPSJtZW51Ij6DX4OAlfqXrJLKkm08YnI+lK2VXI/zi7WVXDwvYT48L2Rp
+        dj4KPGRpdiBjbGFzcz0ibWVudWxpbmsiPjxhIGhyZWY9Imh0dHA6Ly9JbmZv
+        LnJpdmVyLmdvLmpwL1FBL1FBMy5odG1sIiBvbmNsaWNrPSJ0cnl7b3Blbk5l
+        d1dpbmRvdygnaHR0cDovL0luZm8ucml2ZXIuZ28uanAvUUEvUUEzLmh0bWwn
+        KTtyZXR1cm4gZmFsc2U7fWNhdGNoKGUpe30iIHRhcmdldD0iX2JsYW5rIiBj
+        bGFzcz0ibWVudSI+gnCBlYJggUWW4oKijYeC7YK5PC9hPjwvZGl2Pgo8ZGl2
+        IGNsYXNzPSJtZW51bGluayI+PGEgaHJlZj0iLyIgY2xhc3M9Im1lbnUiPlRv
+        cILJlt+C6TwvYT48L2Rpdj4KPC9kaXY+DQoNCjwvZGl2Pg0KPC9ib2R5Pg0K
+        PC9odG1sPg0KDQo=
+    http_version: 
+  recorded_at: Thu, 09 Apr 2015 16:52:40 GMT
+recorded_with: VCR 2.9.3
