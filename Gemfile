@@ -72,6 +72,7 @@ group :test do
   gem 'capybara'
   gem 'database_rewinder'
   gem 'rspec_junit_formatter', '0.2.2'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 gem 'rack-mini-profiler'
