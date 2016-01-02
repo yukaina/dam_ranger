@@ -7,6 +7,7 @@ dependencies:
   pre:
     - gem update --system
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --clean
+    - cp config/circle/secrets.yml.circle config/secrets.yml
 test:
   pre:
     - ruby -v
