@@ -11,10 +11,10 @@ namespace :notice_discharge do
   task check: :environment do
     StackProf.run(mode: :cpu, out: 'tmp/notice_discharge-check.dump') do
       opts = {
-          user_agent:  'AnemoneCrawler/0.00',
-          delay:       1,
-          depth_limit: 0,
-          storage:  Anemone::Storage.SQLite3(crawl_db)
+        user_agent:  'AnemoneCrawler/0.00',
+        delay:       1,
+        depth_limit: 0,
+        storage:  Anemone::Storage.SQLite3(crawl_db)
       }
 
       notice_discharge = nil
@@ -52,7 +52,8 @@ namespace :notice_discharge do
       notice_discharge_areas.each do |area|
         area.discharge_announcements.each do |announcement|
           announcement.discharge_notices.each do |notice|
-            key_url_for_notice = "#{Uri::RiverDisasterPreventionInfo::TOP_URI}/#{notice.discharge_report_path}?#{notice.discharge_report_query}"
+            notice_path_query  = "#{notice.discharge_report_path}?#{notice.discharge_report_query}"
+            key_url_for_notice = "#{Uri::RiverDisasterPreventionInfo::TOP_URI}/#{notice_path_query}"
             if !Rails.env.production? && store.key?(key_url_for_notice)
               # 本番環境以外の場合は、ストアデータがあればそれを使う
               store[key_url_for_notice].doc.xpath('//div[@class="alarm"]').each do |report|
@@ -80,16 +81,17 @@ namespace :notice_discharge do
       DischargeAnnouncement.all.each do |announcement|
         dam_name = announcement.dam_name.gsub('ダム', '').gsub(/(\(機構\)|（機構）|\(利水\)|（利水）)/, '')
         dam =
-            Dam.find_by(name: dam_name) ||
-                Dam.find_by(name: dam_name.gsub('ケ', 'ヶ')) ||
-                Dam.find_by(name: "#{dam_name}（再）")
+          Dam.find_by(name: dam_name) ||
+          Dam.find_by(name: dam_name.tr('ケ', 'ヶ')) ||
+          Dam.find_by(name: "#{dam_name}（再）")
         next unless dam
 
-        dam_discharge_code = DamDischargeCode.find_or_initialize_by(
+        dam_discharge_code =
+          DamDischargeCode.find_or_initialize_by(
             dam_id:          dam.id,
             dam_cd:          dam.dam_cd,
             dam_dischg_code: announcement.dam_dischg_code
-        )
+          )
 
         dam_discharge_code.dam_name = dam.name
         dam_discharge_code.save!
@@ -107,6 +109,6 @@ namespace :notice_discharge do
       .discharge_reports.find_or_create_by(
         notice.to_h.merge(notice_report.to_h)
           .reject { |k, _| DischargeReport.attribute_names.exclude?(k.to_s) }
-    )
+      )
   end
 end
