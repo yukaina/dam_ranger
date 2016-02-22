@@ -77,3 +77,8 @@ end
 
 gem 'rack-mini-profiler'
 gem 'slim-rails'
+
+gem 'pddn', github: 'yukaina/pddn'
+gem 'pdql', github: 'yukaina/pdql'
+gem 'anemone'
+gem 'config'
