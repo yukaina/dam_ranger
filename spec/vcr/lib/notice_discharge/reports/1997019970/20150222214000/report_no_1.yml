@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.example.com/nrpc0603gDisp.do?damDischgCode=1997019970&reportNo=1&reportTime=20150222214000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - AnemoneCrawler/0.00
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=300
+      Content-Language:
+      - ja
+      Content-Type:
+      - text/html;charset=Windows-31J
+      Date:
+      - Sun, 22 Feb 2015 16:09:43 GMT
+      Last-Modified:
+      - Sun, 22 Feb 2015 16:09:03 GMT
+      Server:
+      - ECAcc (nrt/3963)
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '1111'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
+        VHJhbnNpdGlvbmFsLy9FTiINCiAiaHR0cDovL3d3dy53My5vcmcvVFIvaHRt
+        bDQvbG9vc2UuZHRkIj4NCjwhLS0NCg0KLS0+DQo8aHRtbCBsYW5nPSJqYSI+
+        DQo8aGVhZD4NCjx0aXRsZT6NkZN5jPCSyo/IgXmQ7ILMlmiN0I/ulfGBeoNf
+        g4CV+pesksqSbZW2PC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRl
+        bnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVNoaWZ0X0pJ
+        UyI+DQo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBo
+        cmVmPSIvY3NzL3BjLmNzcyIgbWVkaWE9ImFsbCI+DQo8bGluayByZWw9InN0
+        eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSIvY3NzLzA2LmNzcyIg
+        bWVkaWE9ImFsbCI+DQo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRl
+        eHQvY3NzIiBocmVmPSIvY3NzL2FsYXJtZGV0YWlsLmNzcyIgbWVkaWE9ImFs
+        bCI+DQo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvanMv
+        b3BlbldpbmRvdy5qcyI+PC9zY3JpcHQ+DQo8c3R5bGU+DQo8IS0tDQotLT4N
+        Cjwvc3R5bGU+DQo8L2hlYWQ+DQo8Ym9keT4NCjxkaXYgY2xhc3M9Im1haW4i
+        Pg0KDQo8ZGl2IGNsYXNzPSJ3b3JrYXJlYSI+DQoJPGRpdiBjbGFzcz0ibGFz
+        dHVwZGF0ZSI+DQqNWJBWjp6Nj4FGMjAxNS8wMi8yMyAwMTowOTwvZGl2Pg0K
+        CTxkaXYgY2xhc3M9InRpdGxlIj6DX4OAlfqXrJLKkm2VtjwvZGl2Pg0KCTxk
+        aXYgY2xhc3M9ImFsYXJtIj4NCgkJPGRpdiBjbGFzcz0iZGV0YWlsIj4NCgkJ
+        CZJyk2ODX4OAgWmLQI1cgWoNCgkJCSZuYnNwO4tnluyQ7A0KCQkJJm5ic3A7
+        i2eW7JDsDQoJCQkmbmJzcDuR5jGNhg0KCQkJJm5ic3A7MjAxNS8wMi8yMiAy
+        MTo0MDwvZGl2Pg0KCQk8ZGl2IGNsYXNzPSJvZmZpY2UiPg0KCQkJkIWOkYy5
+        i0CNXIFAknKTY5GNjYeKx5edj4qUrZVcPC9kaXY+DQoJCTxkaXY+DQoJCQmD
+        X4OAkYCN7ILJitaCt4Lpj2SXdo/ulfE8L2Rpdj4NCgkJPGRpdiBjbGFzcz0i
+        ZGV0YWlsIj4NCgkJCYF1ic2Q7JCFiMqCzI/jj7iCyZKNiNMhgXY8YnI+PGJy
+        PpJyk2ODX4OAgsWCzYFBMoyOMjKT+jIyjp40MJWqgqmC54NRgVuDZ5X6l6yC
+        8IpKjm6CtYLcgreBQjxicj48YnI+gsiCqIFBg1+DgJX6l6yXyoKqNTAwbTMv
+        c4LwkrSCpoLpgsaXXJF6grOC6oLpj+qNh4LJgs2BQZOWilmV+pesgvCCqIKx
+        gsiCpIpUgssxjp6K1JFPgsmSypJtgqKCvYK1gtyCt4FCPGJyPjxicj6Jupes
+        ic2Q7ILMkIWIyo/jj7iCyZKNiNOCtYLEgq2CvoKzgqKBQjxicj48YnI+KJX6
+        l6yKSo5ugsyW2pNJKTxicj6BQJKZkIWIyojbjp2BQDqScpNjg1+DgI/jl6yI
+        5oLFjX6JSoKqgqCC6IFBg1+DgILMkpmQhYjKgvCI246dgrOCuYLplUuXdoKq
+        gqCC6YK9gt+BQjxicj48L2Rpdj4NCgk8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBj
+        bGFzcz0ibWVudWFyZWEiPg0KPGltZyBzcmM9Ii9pbWcvbG9nby5naWYiIHdp
+        ZHRoPSIyMDAiIGhlaWdodD0iNjgiIGFsdD0ijZGTeYzwksqPyIF5kOyCzJZo
+        jdCP7pXxgXoiPjxkaXYgY2xhc3M9Im1lbnVsaW5rIj48YSBocmVmPSIvbnJw
+        YzA2MDJnRGlzcC5kbz9hcmVhQ29kZT04OCIgY2xhc3M9Im1lbnUiPoNfg4CV
+        +pesksqSbTxicj6UrZVcj/OLtZVcPC9hPjwvZGl2Pgo8ZGl2IGNsYXNzPSJt
+        ZW51bGluayI+PGEgaHJlZj0iaHR0cDovL0luZm8ucml2ZXIuZ28uanAvUUEv
+        UUEzLmh0bWwiIG9uY2xpY2s9InRyeXtvcGVuTmV3V2luZG93KCdodHRwOi8v
+        SW5mby5yaXZlci5nby5qcC9RQS9RQTMuaHRtbCcpO3JldHVybiBmYWxzZTt9
+        Y2F0Y2goZSl7fSIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJtZW51Ij6CcIGV
+        gmCBRZbigqKNh4Ltgrk8L2E+PC9kaXY+CjxkaXYgY2xhc3M9Im1lbnVsaW5r
+        Ij48YSBocmVmPSIvIiBjbGFzcz0ibWVudSI+VG9wgsmW34LpPC9hPjwvZGl2
+        Pgo8L2Rpdj4NCg0KPC9kaXY+DQo8L2JvZHk+DQo8L2h0bWw+DQoNCg==
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:09:43 GMT
+recorded_with: VCR 2.9.3

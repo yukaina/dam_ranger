@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.example.com/nrpc0603gDisp.do?damDischgCode=2103821038&reportNo=1&reportTime=20150114090000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - AnemoneCrawler/0.00
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=300
+      Content-Language:
+      - ja
+      Content-Type:
+      - text/html;charset=Windows-31J
+      Date:
+      - Sun, 22 Feb 2015 16:05:49 GMT
+      Last-Modified:
+      - Sun, 22 Feb 2015 16:05:49 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '1082'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
+        VHJhbnNpdGlvbmFsLy9FTiINCiAiaHR0cDovL3d3dy53My5vcmcvVFIvaHRt
+        bDQvbG9vc2UuZHRkIj4NCjwhLS0NCg0KLS0+DQo8aHRtbCBsYW5nPSJqYSI+
+        DQo8aGVhZD4NCjx0aXRsZT6NkZN5jPCSyo/IgXmQ7ILMlmiN0I/ulfGBeoNf
+        g4CV+pesksqSbZW2PC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRl
+        bnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVNoaWZ0X0pJ
+        UyI+DQo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBo
+        cmVmPSIvY3NzL3BjLmNzcyIgbWVkaWE9ImFsbCI+DQo8bGluayByZWw9InN0
+        eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSIvY3NzLzA2LmNzcyIg
+        bWVkaWE9ImFsbCI+DQo8bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRl
+        eHQvY3NzIiBocmVmPSIvY3NzL2FsYXJtZGV0YWlsLmNzcyIgbWVkaWE9ImFs
+        bCI+DQo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvanMv
+        b3BlbldpbmRvdy5qcyI+PC9zY3JpcHQ+DQo8c3R5bGU+DQo8IS0tDQotLT4N
+        Cjwvc3R5bGU+DQo8L2hlYWQ+DQo8Ym9keT4NCjxkaXYgY2xhc3M9Im1haW4i
+        Pg0KDQo8ZGl2IGNsYXNzPSJ3b3JrYXJlYSI+DQoJPGRpdiBjbGFzcz0ibGFz
+        dHVwZGF0ZSI+DQqNWJBWjp6Nj4FGMjAxNS8wMi8yMyAwMTowNTwvZGl2Pg0K
+        CTxkaXYgY2xhc3M9InRpdGxlIj6DX4OAlfqXrJLKkm2VtjwvZGl2Pg0KCTxk
+        aXYgY2xhc3M9ImFsYXJtIj4NCgkJPGRpdiBjbGFzcz0iZGV0YWlsIj4NCgkJ
+        CYqYlluDX4OADQoJCQkmbmJzcDuWvI7mkOwNCgkJCSZuYnNwO4zpkM6Q7A0K
+        CQkJJm5ic3A7keYxjYYNCgkJCSZuYnNwOzIwMTUvMDEvMTQgMDk6MDA8L2Rp
+        dj4NCgkJPGRpdiBjbGFzcz0ib2ZmaWNlIj4NCgkJCYqYlluDX4OAiseXnY+K
+        lK2VXDwvZGl2Pg0KCQk8ZGl2Pg0KCQkJlfqXrIpKjm6CzJLKkm08L2Rpdj4N
+        CgkJPGRpdiBjbGFzcz0iZGV0YWlsIj4NCgkJCYqYlluDX4OAgsWCzYJQglOT
+        +oJQgk+OnoJPlaqCqYLnloiVYoJTl6eV+4OBgVuDZ4OLgsyV+pesgvCKSo5u
+        grWC3IK3gUI8YnI+g1+DgJKZkIWScpPggsyNSI6WgsmUuoKikpmQhYjKgvCC
+        ZIJrglCCU4JRgUSCV4OBgVuDZ4OLgsmS4Ym6grOCuYLpgr2C34FBi0OP24/z
+        i7WC4oNfg4CXrJP8l8qC8I1sl7aCtYLIgqqC54FBg1+DgJX6l6yXyoLwkrKQ
+        roK1gtyCt4FCPGJyPoKxgsyRgI3sgsmC5oLpgUGDX4OAlfqXrJfKgs2NxZHl
+        gsWWiJViglCCT5enlfuDgYFbg2eDi4LGgsiC6ILcgreBQjxicj6Jupesic2Q
+        7ILMkIWIypXPk66CyZKNiNOCtYLEgq2CvoKzgqKBQjxicj48YnI+glCBRJX6
+        l6yKSo5ugsyW2pNJPGJyPoFAgUCDX4OAkpmQhZJyk+CCzI1IjpaCyZS6gqKB
+        QZKZkIWIyoLwgmSCa4JQglOCUYFEgleDgYFbg2eDi4LJkuGJuoKzgrmC6YK9
+        gt+BQoFAgUA8L2Rpdj4NCgk8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0i
+        bWVudWFyZWEiPg0KPGltZyBzcmM9Ii9pbWcvbG9nby5naWYiIHdpZHRoPSIy
+        MDAiIGhlaWdodD0iNjgiIGFsdD0ijZGTeYzwksqPyIF5kOyCzJZojdCP7pXx
+        gXoiPjxkaXYgY2xhc3M9Im1lbnVsaW5rIj48YSBocmVmPSIvbnJwYzA2MDJn
+        RGlzcC5kbz9hcmVhQ29kZT04MiIgY2xhc3M9Im1lbnUiPoNfg4CV+pesksqS
+        bTxicj6UrZVcj/OLtZVcPC9hPjwvZGl2Pgo8ZGl2IGNsYXNzPSJtZW51bGlu
+        ayI+PGEgaHJlZj0iaHR0cDovL0luZm8ucml2ZXIuZ28uanAvUUEvUUEzLmh0
+        bWwiIG9uY2xpY2s9InRyeXtvcGVuTmV3V2luZG93KCdodHRwOi8vSW5mby5y
+        aXZlci5nby5qcC9RQS9RQTMuaHRtbCcpO3JldHVybiBmYWxzZTt9Y2F0Y2go
+        ZSl7fSIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJtZW51Ij6CcIGVgmCBRZbi
+        gqKNh4Ltgrk8L2E+PC9kaXY+CjxkaXYgY2xhc3M9Im1lbnVsaW5rIj48YSBo
+        cmVmPSIvIiBjbGFzcz0ibWVudSI+VG9wgsmW34LpPC9hPjwvZGl2Pgo8L2Rp
+        dj4NCg0KPC9kaXY+DQo8L2JvZHk+DQo8L2h0bWw+DQoNCg==
+    http_version: 
+  recorded_at: Sun, 22 Feb 2015 16:05:49 GMT
+recorded_with: VCR 2.9.3
