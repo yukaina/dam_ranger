@@ -13,7 +13,7 @@ describe 'dam_quantity' do
       end
     end
     context 'when dam has observatory_sign_cd.' do
-      it{ expect(DamQuantity.count).to eq(469) }
+      it { expect(DamQuantity.count).to eq(469) }
     end
   end
 
@@ -31,12 +31,12 @@ describe 'dam_quantity' do
 
     context 'when no observatory_sign_cd.' do
       let(:quantity) { :dam_quantity_with_yubari }
-      it{ expect(DamQuantityRecordYear.count).to eq(0) }
+      it { expect(DamQuantityRecordYear.count).to eq(0) }
     end
 
     context 'when dam has observatory_sign_cd.' do
       let(:quantity) { :dam_quantity_with_tokachi }
-      it{ expect(DamQuantityRecordYear.count).to eq(14) }
+      it { expect(DamQuantityRecordYear.count).to eq(14) }
     end
   end
 
@@ -58,7 +58,7 @@ describe 'dam_quantity' do
 
     # 仮の定義でテストが適当, DamQuantityRecordが正しく作られていることを確認するテストを書く
     context 'when dam has observatory_sign_cd.' do
-      it{ expect(DamQuantity.count).to eq(2) }
+      it { expect(DamQuantity.count).to eq(2) }
       # it{ expect(DamQuantityRecordYear.count).to eq(3) }
       # it{ expect(DamQuantityRecord.count).to eq(1488) } # 13917
     end
@@ -68,9 +68,11 @@ describe 'dam_quantity' do
         store = Anemone::Storage.SQLite3('db/test_crawl.db')
         (2002..2004).each do |year|
           (1..12).each do |month|
-            start_day = Date::new(year, month, 1)
+            start_day = Date.new(year, month, 1)
             end_day = start_day.end_of_month
+            # rubocop:disable Style/LineLength
             key_url = "#{Uri::RiverDisasterPreventionInfo::PERIOD_DAM_DATA_URI}?KIND=1&ID=#{tokachi.observatory_sign_cd}&BGNDATE=#{start_day.strftime('%Y%m%d')}&ENDDATE=#{end_day.strftime('%Y%m%d')}&KAWABOU=NO"
+            # rubocop:enable Style/LineLength
             Anemone.crawl(key_url) do |anemone|
               anemone.on_every_page do |page|
                 store.delete(page.url)

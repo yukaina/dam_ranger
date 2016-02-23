@@ -1,3 +1,4 @@
+# ダム諸量データ用
 class DamQuantity < ActiveRecord::Base
   has_many :dam_quantity_record_years
   validates :name, uniqueness: true
@@ -7,35 +8,36 @@ class DamQuantity < ActiveRecord::Base
 
   def set_parsed_observatory_sign
     parsed_observatory_sign = parse_observatory_sign(observatory_sign_cd)
-    parsed_observatory_sign.each { |k, v|
-      self[k.to_sym] = v }
+    parsed_observatory_sign.each do |k, v|
+      self[k.to_sym] = v
+    end
   end
 
-  private
-
+  # rubocop:disable Style/MethodLength
   def parse_observatory_sign(obs_sign_cd)
     case observatory_sign_cd.size
     when 15
       {
-          observatory_classification_cd: obs_sign_cd[0],
-          river_system_cd:               obs_sign_cd[1..4],
-          jurisdiction_cd:               obs_sign_cd[5..6],
-          regional_bureau_cd:            obs_sign_cd[7..8],
-          office_cd:                     obs_sign_cd[9..11],
-          observatory_id:                obs_sign_cd[12..14],
-          local_governments_cd:          obs_sign_cd[7..11]
+        observatory_classification_cd: obs_sign_cd[0],
+        river_system_cd:               obs_sign_cd[1..4],
+        jurisdiction_cd:               obs_sign_cd[5..6],
+        regional_bureau_cd:            obs_sign_cd[7..8],
+        office_cd:                     obs_sign_cd[9..11],
+        observatory_id:                obs_sign_cd[12..14],
+        local_governments_cd:          obs_sign_cd[7..11]
       }
     when 13
       {
-          jurisdiction_cd:               "0#{obs_sign_cd[0]}",
-          sub_jurisdiction_cd:           obs_sign_cd[1..2],
-          observatory_classification_cd: obs_sign_cd[3..4],
-          river_system_cd:               "0#{obs_sign_cd[5..7]}",
-          office_cd:                     "0#{obs_sign_cd[8..9]}",
-          observatory_id:                obs_sign_cd[10..12]
+        jurisdiction_cd:               "0#{obs_sign_cd[0]}",
+        sub_jurisdiction_cd:           obs_sign_cd[1..2],
+        observatory_classification_cd: obs_sign_cd[3..4],
+        river_system_cd:               "0#{obs_sign_cd[5..7]}",
+        office_cd:                     "0#{obs_sign_cd[8..9]}",
+        observatory_id:                obs_sign_cd[10..12]
       }
     end
   end
+  # rubocop:enable Style/MethodLength
 end
 
 # 観測所分類コード:     observatory_classification_cd

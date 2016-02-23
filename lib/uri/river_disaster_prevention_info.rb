@@ -10,7 +10,7 @@ module Uri
     QUANTITY_HISTORY_URI = "#{HTTP_SCHEME}://#{Rails.application.secrets.quantity_history_host}.#{DOMAIN}".freeze
 
     QUANTITY_URI = "#{TOP_URI}/#{Rails.application.secrets.quantity_top_path}".freeze
-    QUANTITY_AREA_PATH = "#{Rails.application.secrets.quantity_area_top_path}"
+    QUANTITY_AREA_PATH = Rails.application.secrets.quantity_area_top_path.to_s.freeze
     QUANTITY_AREA_URI = "#{TOP_URI}/#{Rails.application.secrets.quantity_area_top_path}".freeze
     REGEX_QUANTITY_AREA_PATH = /#{QUANTITY_AREA_PATH}/
     QUANTITY_HISTORY_TOP_URI = "#{QUANTITY_HISTORY_URI}/#{Rails.application.secrets.quantity_top_path}".freeze
