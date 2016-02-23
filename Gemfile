@@ -54,6 +54,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'stackprof'
 end
 
 group :development do
@@ -71,6 +72,10 @@ group :test do
   gem 'annotate'
   gem 'capybara'
   gem 'database_rewinder'
+  # HTTP requests用のモックアップを作ってくれる
+  gem 'webmock'
+  gem 'vcr'
+  gem 'simplecov', require: false
   gem 'rspec_junit_formatter', '0.2.2'
   gem "codeclimate-test-reporter", require: nil
 end
