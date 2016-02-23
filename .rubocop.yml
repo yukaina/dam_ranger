@@ -1,8 +1,8 @@
 # This is the configuration used to check the rubocop source code.
+Rails:
+  Enabled: true
 
 AllCops:
-  Rails:
-    Enabled: true
   Include:
     - '**/Rakefile'
     - '**/config.ru'
