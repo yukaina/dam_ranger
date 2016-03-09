@@ -12,7 +12,7 @@ describe 'dam_quantity_period' do
     end
 
     def rake_invoke
-      VCR.use_cassette 'lib/tasks/dam_quantity/year/tokachi'  do
+      VCR.use_cassette 'lib/tasks/dam_quantity/year/tokachi' do
         subject.invoke
       end
     end
